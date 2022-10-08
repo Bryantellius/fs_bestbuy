@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node --trace-warnings --trace-uncaught --async-stack-traces server.js",
-    "build": "babel --ignore dist,lectures,public,node_modules -d dist ../server -s"
+    "build": "babel --ignore dist,node_modules -d dist ../server -s"
   },
   "keywords": [
     "express",
