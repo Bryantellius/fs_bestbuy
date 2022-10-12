@@ -39,7 +39,7 @@ app.use("/api", apiRouter);
  */
 app.use((req, res, next) => {
   try {
-    res.sendFile(join(__dirname, "../client/build/index.html"));
+    res.sendFile(join(__dirname, "../../client/build/index.html"));
   } catch (error) {
     next(error);
   }
